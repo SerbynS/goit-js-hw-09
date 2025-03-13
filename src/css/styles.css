@@ -16,3 +16,120 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+* {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.gallery {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+	/* align-items: center; */
+	justify-content: center;
+	padding-top: 24px;
+}
+
+.gallery li img {
+	width: 360px;
+	height: 200px;
+	transition: transform 0.3s ease;
+}
+
+img:hover {
+	transform: scale(1.04);
+}
+
+.sl-wrapper {
+	background: #2e2f42 !important;
+}
+
+.sl-close,
+.sl-prev,
+.sl-next,
+.sl-counter {
+	color: #ffffff !important;
+	/* filter: invert(100%); */
+}
+
+.sl-caption {
+	font-size: 16px;
+	color: white;
+	background: rgba(255, 255, 255, 0.7); /* Темний фон */
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.feedback-form {
+	width: 408px;
+	padding: 24px 24px 0;
+}
+
+.feedback-form label {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.feedback-form label:first-of-type {
+	margin-bottom: 8px;
+}
+
+.feedback-form label:last-of-type {
+	margin-bottom: 16px;
+}
+
+.feedback-form button {
+	background: #4e75ff;
+	padding: 8px 16px;
+	border-radius: 8px;
+	border: none;
+	color: #ffffff;
+}
+
+.feedback-form input,
+textarea {
+	border-radius: 4px;
+	border: 1px solid #808080;
+	height: 40px;
+	padding: 8px 16px;
+}
+
+.feedback-form textarea {
+	height: 80px;
+}
+
+.feedback-forminput:focus,
+textarea:focus {
+	border: 1px solid #808080;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: #2e2f42;
+	font-size: 16px;
+}
+/* 
+
+.feedback-form input {
+	border-radius: 4px;
+	border: 1px solid #808080;
+	height: 40px;
+}
+
+.feedback-forminput:focus {
+	border: 1px solid #808080;
+}
+
+.feedback-form button {
+	background: #4e75ff;
+	padding: 8px 16px;
+	border-radius: 8px;
+	border: none;
+	color: #ffffff;
+} */
